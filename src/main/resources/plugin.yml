@@ -1,0 +1,29 @@
+name: GAListener
+main: com.swifteh.GAL.GAL
+version: 1.3.2
+website: http://mc-index.com
+author: swifteh
+description: Execute Commands on Votifier Events
+depend: [Votifier]
+commands:
+    gal:
+        description: Admin commands
+    fakevote:
+        description: Send a fake vote with optional service name
+    vote:
+        description: Show voting information
+    votetop:
+        aliases: [topvotes]
+        description: Show a list of the top voters
+    rewards:
+        description: Show a list of the cumulative rewards
+permissions:
+    gal.admin:
+        description: Allows you to use all commands
+        default: false
+    gal.noremind:
+        description: Exclude from vote reminder
+        default: false
+    gal.top:
+        description: Allows you to use /votetop
+        default: true
